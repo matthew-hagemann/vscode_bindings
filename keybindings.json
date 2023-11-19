@@ -27,13 +27,9 @@
   },
   // FILE TREE
   {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
-  },
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
-    "when": "editorTextFocus"
+  "key": "space e",
+  "command": "workbench.action.toggleSidebarVisibility",
+  "when": "!editorTextFocus && !terminalFocus"
   },
   {
     "key": "n",
@@ -69,5 +65,16 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "space",
+    "command": "-filesExplorer.openFilePreserveFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus"
   }
+
 ]

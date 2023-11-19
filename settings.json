@@ -67,6 +67,15 @@
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    // Editor bindings
+    {
+      "before": ["leader", "e"], 
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["leader", "e"], 
+      "commands": ["workbench.files.action.focusFilesExplorer"], "when": "editorTextFocus"
     }
   ],
   "vim.visualModeKeyBindings": [
